@@ -15,6 +15,7 @@ warnings.filterwarnings(action="ignore")
 def find_formant(file_path):
 
     file_list = os.listdir(file_path)  # path에 있는 데이터들을 file_list에 삽입
+    print("find_formant file_list: " + str(file_list))
 
     data = pd.DataFrame({
         "times": [],
@@ -61,7 +62,9 @@ def find_formant(file_path):
 
 
 def find_pitchnf3to5_range(file_path):
+
     csv_file = open(file_path, "r", encoding="utf-8", newline="")
+    print("find_pitchnf3to5_range file_name: "+ file_path)
     rdr = csv.reader(csv_file)
 
     pitch_data = pd.DataFrame({"F3": [], "F4": [], "F5": [], "filename": []})
@@ -129,11 +132,10 @@ def find_pitchnf3to5_range(file_path):
     return 0
 
 
-if __name__ == "__main__":
 
-    if find_formant('test_sample/') != 0:
-        print("find_formant 오류")
+if find_formant('test_sample/') != 0:
+    print("find_formant 오류")
 
-    if find_pitchnf3to5_range('voice_formant.csv') != 0:
-        print("find_pitchnf3to5_range 오류")
+if find_pitchnf3to5_range('voice_formant.csv') != 0:
+    print("find_pitchnf3to5_range 오류")
 
