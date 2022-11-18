@@ -1,7 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel
-from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
 
 class MyApp(QWidget):
 
@@ -45,7 +45,7 @@ class MyApp(QWidget):
         r_btn.setFont(font2)
 
         record_pix = QPixmap('기록보기 아이콘.png')
-        start_pix = QPixmap('시작아이콘.png')
+        start_pix = QPixmap("시작아이콘.png")
         train_pix = QPixmap('훈련아이콘.png')
         logo_pix = QPixmap('ACoach_logo.png')
 
