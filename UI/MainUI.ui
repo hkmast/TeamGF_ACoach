@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AiCoach</class>
+ <widget class="QMainWindow" name="AiCoach">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>760</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>760</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icon/ACoach_icon.png</normaloff>:/icon/ACoach_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 255, 255)
+</string>
+  </property>
+  <widget class="QWidget" name="first_page">
+   <widget class="QPushButton" name="train_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>580</y>
+      <width>350</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 196, 233)</string>
+    </property>
+    <property name="text">
+     <string>훈련하기</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>350</width>
+      <height>350</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>464</x>
+      <y>580</y>
+      <width>350</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 196, 233)</string>
+    </property>
+    <property name="text">
+     <string>시작하기</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>350</width>
+      <height>350</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="record_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>853</x>
+      <y>580</y>
+      <width>350</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 196, 233)</string>
+    </property>
+    <property name="text">
+     <string>기록보기</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>350</width>
+      <height>350</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="train_label">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>225</y>
+      <width>350</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/icon/훈련아이콘.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="start_label">
+    <property name="geometry">
+     <rect>
+      <x>464</x>
+      <y>225</y>
+      <width>350</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/icon/시작아이콘.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="record_label">
+    <property name="geometry">
+     <rect>
+      <x>853</x>
+      <y>225</y>
+      <width>350</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/icon/기록보기 아이콘.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_logo">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>40</y>
+      <width>470</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>ACoach_logo.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>start_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AiCoach</receiver>
+   <slot>sbtn_Listener()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>686</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>902</x>
+     <y>872</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>gender_choice()</slot>
+  <slot>sbtn_Listener()</slot>
+ </slots>
+</ui>

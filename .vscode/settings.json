@@ -1,0 +1,7 @@
+{"python.linting.pylintArgs": [
+    "--extension-pkg-whitelist=PyQt5"
+],
+"cSpell.words": [
+    "Pixmap"
+]
+}

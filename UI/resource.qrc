@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>ACoach_icon.png</file>
+    <file>기록보기 아이콘.png</file>
+    <file>시작아이콘.png</file>
+    <file>훈련아이콘.png</file>
+  </qresource>
+  <qresource prefix="team logo">
+    <file>TeamGaZaMi_icon.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>ACoach_logo.png</file>
+  </qresource>
+</RCC>
